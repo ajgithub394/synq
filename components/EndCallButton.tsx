@@ -5,7 +5,7 @@ import React from 'react'
 import { Button } from './ui/button';
 import { useRouter } from 'next/navigation';
 
-const EndCallButton = () => {
+export default function EndCallButton = () => {
   const call = useCall();
   const router = useRouter();
   const {useLocalParticipant} = useCallStateHooks();
@@ -24,5 +24,3 @@ const EndCallButton = () => {
     </Button>
   )
 }
-
-export default EndCallButton
