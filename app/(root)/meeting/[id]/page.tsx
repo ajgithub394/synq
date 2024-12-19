@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 import {useGetCallById} from "@/hooks/useGetCallById";
 import Loader from '@/components/Loader';
 
-const Meeting = ({params : {id}} : {params : {id : string}}) => {
+export default function Meeting = ({params : {id}} : {params : {id : string}}) => {
 
   const {user, isLoaded} = useUser();
   const [isSetupComplete, setIsSetupComplete] = useState(false);
@@ -25,5 +25,3 @@ const Meeting = ({params : {id}} : {params : {id : string}}) => {
     </main>
   )
 }
-
-export default Meeting
