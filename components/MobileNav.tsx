@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils"
 
 import React from 'react'
 
-const MobileNav = () => {
+export default function MobileNav = () => {
   const pathname = usePathname();
   return (
     <section className='w-full max-w-[264px]'>
@@ -54,5 +54,3 @@ const MobileNav = () => {
     </section>
   )
 }
-
-export default MobileNav
