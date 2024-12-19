@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "type": "module",
   "dependencies": {
     "@clerk/clerk-react": "^5.20.4",
     "@clerk/nextjs": "^6.9.5",
@@ -32,6 +33,7 @@
     "@types/react": "^19",
     "@types/react-datepicker": "^6.2.0",
     "@types/react-dom": "^19",
+    "babel-eslint": "^10.1.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
     "postcss": "^8",
