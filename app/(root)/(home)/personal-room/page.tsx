@@ -16,7 +16,7 @@ const Table = ({title,description} : {title : string ; description : string;}) =
   </div>
 )
 
-const PersonalRoom = () => {
+export default function PersonalRoom = () => {
   const {user} = useUser();
   const meetingId = user?.id;
   const {toast} = useToast();
@@ -70,5 +70,3 @@ const PersonalRoom = () => {
     </section>
   )
 }
-
-export default PersonalRoom
