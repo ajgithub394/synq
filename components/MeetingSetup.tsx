@@ -3,7 +3,7 @@ import { DeviceSettings, useCall, VideoPreview } from '@stream-io/video-react-sd
 import React, { useEffect, useState } from 'react'
 import { Button } from './ui/button';
 
-const MeetingSetup = ({setIsSetupComplete}:{setIsSetupComplete : (value : boolean)=>void}) => {
+export default function MeetingSetup = ({setIsSetupComplete}:{setIsSetupComplete : (value : boolean)=>void}) => {
   const [isMicCamToggledOn, setIsMicCamToggledOn] = useState(false);
   const call = useCall();
 
@@ -43,5 +43,3 @@ const MeetingSetup = ({setIsSetupComplete}:{setIsSetupComplete : (value : boolea
     </div>
   )
 }
-
-export default MeetingSetup
