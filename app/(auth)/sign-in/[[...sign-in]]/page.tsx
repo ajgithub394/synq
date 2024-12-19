@@ -8,5 +8,3 @@ export default SignInPage = () => {
     </main>
   )
 }
-
-export default SignInPage
