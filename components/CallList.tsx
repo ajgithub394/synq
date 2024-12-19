@@ -9,7 +9,7 @@ import MeetingCard from './MeetingCard';
 import Loader from './Loader';
 import { useToast } from '@/hooks/use-toast';
 
-const CallList = ({type} : {type : 'ended' | 'upcoming' | 'recordings'}) => {
+export default function CallList = ({type} : {type : 'ended' | 'upcoming' | 'recordings'}) => {
   const {endedCalls, upcomingCalls, callRecordings, isLoading} = useGetCalls();
   const router = useRouter();
   const [recordings, setRecordings] = useState<CallRecording[]>([]);
@@ -85,5 +85,3 @@ const CallList = ({type} : {type : 'ended' | 'upcoming' | 'recordings'}) => {
     </div>
   )
 }
-
-export default CallList
