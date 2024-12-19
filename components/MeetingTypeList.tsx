@@ -11,7 +11,7 @@ import { Textarea } from './ui/textarea'
 import ReactDatePicker from 'react-datepicker'
 import { Input } from './ui/input'
 
-const MeetingTypeList = () => {
+export default function MeetingTypeList = () => {
   const router = useRouter();
   const [meetingState, setMeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined>();
   const [values,setValues] = useState({
@@ -164,5 +164,3 @@ const MeetingTypeList = () => {
     </section>
   )
 }
-
-export default MeetingTypeList
