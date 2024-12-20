@@ -25,7 +25,7 @@ interface MeetingModalProps{
     buttonIcon?: string;
 }
 
-export default function MeetingModal = ({isOpen,onClose,title,className,buttonText,handleClick,children,image,buttonIcon}: MeetingModalProps) => {
+export default function MeetingModal({isOpen,onClose,title,className,buttonText,handleClick,children,image,buttonIcon}: MeetingModalProps) => {
   return (
     <Dialog open = {isOpen} onOpenChange={onClose}>
       <DialogTrigger></DialogTrigger>
