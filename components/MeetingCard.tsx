@@ -27,7 +27,7 @@ export default function MeetingCard({
   handleClick,
   link,
   buttonText,
-}: MeetingCardProps) => {
+}: MeetingCardProps){
   const { toast } = useToast();
 
   return (
