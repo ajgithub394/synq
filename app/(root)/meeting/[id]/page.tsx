@@ -8,12 +8,13 @@ import { useGetCallById } from "@/hooks/useGetCallById";
 import Loader from "@/components/Loader";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default async function Meeting({ params }: PageProps) {
+export default async function Meeting(props: PageProps) {
+  const params = await props.params;
   const { user, isLoaded } = useUser();
   const [isSetupComplete, setIsSetupComplete] = useState(false);
   const { call, isCallLoading } = useGetCallById(params.id);
