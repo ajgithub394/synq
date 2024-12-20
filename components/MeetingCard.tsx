@@ -18,7 +18,7 @@ interface MeetingCardProps {
   link: string;
 }
 
-export default function MeetingCard = ({
+export default function MeetingCard({
   icon,
   title,
   date,
