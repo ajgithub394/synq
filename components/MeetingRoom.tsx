@@ -18,7 +18,7 @@ import Loader from './Loader';
 
 type CallLayoutType = 'grid' | 'speaker-left' | 'speaker-right';
 
-export default function MeetingRoom = () => {
+export default function MeetingRoom() => {
   const searchParams = useSearchParams();
   const isPersonalRoom = !!searchParams.get('personal');
   const [layout, setLayout] = useState<CallLayoutType>('speaker-left');
