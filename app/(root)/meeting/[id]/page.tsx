@@ -3,21 +3,15 @@ import MeetingRoom from "@/components/MeetingRoom";
 import MeetingSetup from "@/components/MeetingSetup";
 import { useUser } from "@clerk/nextjs";
 import { StreamCall, StreamTheme } from "@stream-io/video-react-sdk";
-import React, { useState } from "react";
+import React, { useState, useEffect, use } from "react";
 import { useGetCallById } from "@/hooks/useGetCallById";
 import Loader from "@/components/Loader";
 
-interface PageProps {
-  params: Promise<{
-    id: string;
-  }>;
-}
-
-export default async function Meeting(props: PageProps) {
-  const params = await props.params;
+const Meeting = ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = use(params);
   const { user, isLoaded } = useUser();
   const [isSetupComplete, setIsSetupComplete] = useState(false);
-  const { call, isCallLoading } = useGetCallById(params.id);
+  const { call, isCallLoading } = useGetCallById(id);
 
   if (!isLoaded || isCallLoading) return <Loader />;
 
@@ -34,4 +28,6 @@ export default async function Meeting(props: PageProps) {
       </StreamCall>
     </main>
   );
-}
+};
+
+export default Meeting;
