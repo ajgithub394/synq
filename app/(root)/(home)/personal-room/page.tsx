@@ -35,7 +35,6 @@ export default function PersonalRoom() {
   const { call } = useGetCallById(meetingId!);
 
   const startRoom = async () => {
-    "use server";
     if (!client || !user) return;
 
     if (!call) {
