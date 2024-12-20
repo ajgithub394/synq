@@ -30,7 +30,7 @@ export default function PersonalRoom() {
   const { toast } = useToast();
   const client = useStreamVideoClient();
   const router = useRouter();
-  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meetingId}?personal=true`;
+  const meetingLink = `/meeting/${meetingId}?personal=true`;
 
   const { call } = useGetCallById(meetingId!);
 
