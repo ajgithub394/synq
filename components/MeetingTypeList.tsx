@@ -152,7 +152,7 @@ export default function MeetingTypeList(){
       <MeetingModal
         isOpen = {meetingState === 'isJoiningMeeting'}
         onClose = {()=>setMeetingState(undefined)}
-        title = ''
+        title = 'Enter the meeting link'
         className = "text-center"
         buttonText = "Join Meeting"
         handleClick = {() => router.push(values.link)}
