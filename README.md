@@ -16,3 +16,4 @@ This is a video calling web application which provides high quality video callin
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Clerk](https://img.shields.io/badge/Clerk-3E2B87?style=for-the-badge&logo=clerk&logoColor=white)
 ![Stream API](https://img.shields.io/badge/Stream%20API-001935?style=for-the-badge&logo=stream&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
